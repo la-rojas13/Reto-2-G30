@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../images/icons8-computadora-64.png">
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../js/message.js"></script>
+  <title>SGPC - MESSAGE</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <!-- Logo Image -->
+        <img src="../images/icons8-computadora-64.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+        <!-- Logo Text -->
+        <span class="text-uppercase font-weight-bold">SGPC</span>
+      </a>
+
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+      <div id="navbarSupportedContent" class="collapse navbar-collapse ">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="../index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="./client.html" class="nav-link">Clientes</a></li>
+          <li class="nav-item"><a href="./computer.html" class="nav-link">Computadores</a></li>
+          <li class="nav-item"><a href="./message.html" class="nav-link">Mensajes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main id="main-content">
+    <h3>Creacion de mensajes</h3>
+    <div class="form-container">
+      <div class="form-floating input-group-sm">
+        <input class="id-input form-control" type="number" id="id" placeholder="id">
+        <label for="id">ID</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="input-form form-control" type="text" id="message" placeholder="message" rows="20"></textarea>
+        <label for="brand">message</label>
+      </div>
+      <button id="btn-agregar" class="btn btn-primary" onclick="agregar()">Agregar</button>
+      <button id="btn-listar" class="btn btn-secondary" onclick="traerInformacion()">Listar</button>
+      <button id="btn-actualizar" class="btn btn-primary" onclick="actualizar()">Actualizar</button>
+    </div>
+    <div class="spinner-border text-primary" id="spinner" role="status">
+      <span class="sr-only"></span>
+    </div>
+    <div id="table-container"></div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white fixed-bottom">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white">MisionTic 2022 Laura Lopez</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

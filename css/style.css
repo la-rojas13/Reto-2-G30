@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+#navbarSupportedContent{
+    margin-left: 50%;
+}
+
+#spinner{
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    display: none;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+}
+#main-content{
+    display:inline-block ;
+    width: 100vw;
+    height: 100vh;
+}
+.form-container{
+    width: 75vw;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    height: 20px;
+}
+.id-input{
+    width: 100px;
+}
+.input-form{
+    width: 150px;
+}
+#message{
+    width: 650px;
+}
+h3{
+    text-align: center;
+    margin: 25px 0 20px 0;
+}
+.card{
+    margin: auto;
+    margin-right: 20px;
+}
+.card-img-top {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+#table-container{
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+}
